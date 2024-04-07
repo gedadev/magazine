@@ -1,0 +1,21 @@
+:root {
+  --light-color: #FFF7FC;
+  --dark-color: #222831;
+  --secondary-color: #8B93FF;
+  --accent-color: #5755FE;
+  --highlight-color: #FF71CD;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: var(--light-color);
+}
