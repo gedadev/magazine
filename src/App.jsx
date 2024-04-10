@@ -1,7 +1,12 @@
 import "./styles/App.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <section className="cover"></section>
+      <main></main>
+    </>
+  );
 }
 
 export default App;
