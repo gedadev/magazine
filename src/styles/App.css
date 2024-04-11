@@ -28,7 +28,8 @@ body {
   display: flex;
 }
 
-.cover {
+.cover-container {
+  position: relative;
   background: var(--secondary-color);
   width: 50vw;
   height: 100vh;
@@ -44,11 +45,11 @@ main {
     flex-direction: column;
   }
 
-  .cover {
+  .cover-container {
     width: 100%; 
   }
 
-  .content {
+  main {
     width: 100%;
   }
 }
