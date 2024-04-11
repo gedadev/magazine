@@ -5,12 +5,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    position: relative;
+    position: absolute;
+    width: 100%;
 }
 
 header h1 {
     font-family: "Whisper", cursive;
     font-size: 3rem;
+    z-index: 10;
 }
 
 .ham-menu {
@@ -41,6 +43,7 @@ header h1 {
     background: linear-gradient(to right top, var(--accent-color), var(--highlight-color));
     transform: scale(0);
     transition: transform 0.4s ease-in-out;
+    z-index: 9;
 }
 
 .menu-list ul {

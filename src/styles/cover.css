@@ -1,0 +1,43 @@
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cover-name,
+.cover-title {
+    position: absolute;
+    margin: 1rem 2rem;
+    color: var(--light-color);
+}
+
+.cover-name {
+    top: 70vh;
+    border: 1px solid var(--light-color);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.cover-title {
+    top: 75vh;
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+}
+
+@media (max-width: 700px) {
+    .cover-name {
+        font-size: 0.8rem;
+    }
+    
+    .cover-title {
+        font-size: 2.4rem;
+        letter-spacing: 0.4rem;
+    }
+}
