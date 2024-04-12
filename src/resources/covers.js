@@ -15,6 +15,13 @@ const covers = [
       name: "FASHION",
       title: "Fresh summer fashion",
     },
+    {
+      id: uuidv4(),
+      img: "https://i.imgur.com/3LZyu2U.jpg",
+      alt: "model",
+      name: "GAMER",
+      title: "The truth about space",
+    },
 ];
 
 export default covers;

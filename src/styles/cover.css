@@ -24,6 +24,8 @@
     position: absolute;
     margin: 1rem 2rem;
     color: var(--light-color);
+    pointer-events: none;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .cover-name {
