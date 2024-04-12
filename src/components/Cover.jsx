@@ -1,11 +1,47 @@
 import "../styles/cover.css";
+import covers from "../resources/covers";
+import { useEffect, useState, Fragment } from "react";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
+import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 
 export default function Cover() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalID = setInterval(() => {
+      setCurrentIndex((index) => {
+        if (index === covers.length - 1) return 0;
+        return index + 1;
+      });
+    }, 5000);
+
+    return () => clearInterval(intervalID);
+  }, []);
+
   return (
     <div className="cover">
-      <img src="https://i.imgur.com/oo26Sf4.jpg" alt="model" />
+      <div className="cover-images-container">
+        {covers.map((item) => (
+          <img
+            key={item.id}
+            src={item.img}
+            style={{ translate: `${-100 * currentIndex}%` }}
+          ></img>
+        ))}
+      </div>
       <span className="cover-name">FASHION</span>
       <h2 className="cover-title">The new muse of the catwalk</h2>
+      <div className="cover-navigation">
+        {covers.map((item, index) => (
+          <Fragment key={item.id}>
+            {index === currentIndex ? (
+              <RadioButtonCheckedIcon />
+            ) : (
+              <RadioButtonUncheckedIcon />
+            )}
+          </Fragment>
+        ))}
+      </div>
     </div>
   );
 }
