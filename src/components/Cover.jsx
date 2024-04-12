@@ -18,6 +18,10 @@ export default function Cover() {
     return () => clearInterval(intervalID);
   }, []);
 
+  const selectItem = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div className="cover">
       <div className="cover-images-container">
@@ -50,9 +54,9 @@ export default function Cover() {
         {covers.map((item, index) => (
           <Fragment key={item.id}>
             {index === currentIndex ? (
-              <RadioButtonCheckedIcon />
+              <RadioButtonCheckedIcon onClick={() => selectItem(index)} />
             ) : (
-              <RadioButtonUncheckedIcon />
+              <RadioButtonUncheckedIcon onClick={() => selectItem(index)} />
             )}
           </Fragment>
         ))}
