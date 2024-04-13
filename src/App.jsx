@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
         <Header />
         <Cover />
       </section>
-      <main></main>
+      <main>
+        <Home />
+      </main>
     </>
   );
 }
