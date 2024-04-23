@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "../styles/header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const menu = useRef(null);
@@ -30,10 +31,18 @@ export default function Header() {
         </div>
         <div className="menu-list" ref={refElement}>
           <ul>
-            <li>Home</li>
-            <li>Models</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="models">
+              <li>Models</li>
+            </Link>
+            <Link to="about">
+              <li>About Us</li>
+            </Link>
+            <Link to="contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
       </nav>

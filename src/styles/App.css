@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 body {
   background: var(--light-color);
   font-family: "Merriweather", serif;
