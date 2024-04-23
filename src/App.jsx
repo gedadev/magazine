@@ -1,7 +1,7 @@
 import "./styles/App.css";
+import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
-import Home from "./components/Home";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Cover />
       </section>
       <main>
-        <Home />
+        <Outlet />
       </main>
     </>
   );
