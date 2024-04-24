@@ -6,6 +6,7 @@
   --secondary-color: #8B93FF;
   --accent-color: #5755FE;
   --highlight-color: #FF71CD;
+  --transparent-background: rgba(0, 0, 0, 0.5);
 }
 
 * {
