@@ -20,7 +20,11 @@
 }
 
 a:visited {
-  color: inherit;
+  color: var(--dark-color);
+}
+
+a {
+  color: var(--dark-color);
 }
 
 body {
