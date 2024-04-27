@@ -31,7 +31,7 @@ export default function Contact() {
               rows="10"
             ></textarea>
           </div>
-          <button type="submit" className="button">
+          <button type="submit" className="button input-item">
             Submit Now
           </button>
         </form>
@@ -48,7 +48,7 @@ export default function Contact() {
             <strong>Phone:</strong>
             <p>(01) 1234-5678</p>
           </div>
-          <div className="info-item">
+          <div className="networks">
             <FaFacebook />
             <FaTwitter />
             <FaInstagram />
