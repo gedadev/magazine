@@ -2,6 +2,7 @@ import "../styles/contact.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import GoogleMap from "google-map-react";
 
 export default function Contact() {
   return (
@@ -55,7 +56,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="map"></div>
+      <div className="map">
+        <GoogleMap center={[59.938043, 30.337157]} zoom={11} />
+      </div>
     </section>
   );
 }
