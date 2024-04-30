@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 const covers = [
     {
       id: uuidv4(),
-      img: "https://i.imgur.com/oo26Sf4.jpg",
+      img: "https://images.unsplash.com/photo-1556755211-76b514756669",
       alt: "model picture",
       name: "MODEL",
       title: "The new muse of the catwalk",
